@@ -70,7 +70,7 @@ const Todo = () => {
       <input
         type="text"
         placeholder="Search..."
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 transform hover:-translate-y-1 transition-all duration-200"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
@@ -84,20 +84,20 @@ const Todo = () => {
       <p className="text-sm text-gray-600 mb-3">{progress}% Active</p>
 
       
-      <form onSubmit={submit} className="space-y-3">
+      <form onSubmit={submit} className="space-y-3  ">
         <input
           type="text"
           ref={brandRef}
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 transform hover:-translate-y-1 transition-all duration-200" placeholder="John" required
         />
         <input
           type="text"
           ref={modelRef}
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 transform hover:-translate-y-1 transition-all duration-200" placeholder="Doe" required
         />
         <button
           type="submit"
-          className="bg-blue-700 text-white px-4 py-2 rounded"
+          className="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto text-center transform hover:-translate-y-1 transition-all duration-200"
         >
           Submit
         </button>
